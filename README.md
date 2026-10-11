@@ -5,7 +5,7 @@
 [![CI](https://github.com/Acuris-GmbH/acuris-reverse-geocoding-widget/actions/workflows/ci.yml/badge.svg)](https://github.com/Acuris-GmbH/acuris-reverse-geocoding-widget/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-**Status:** beta (0.1.0)
+**Status:** beta (0.1.1)
 
 ---
 
@@ -71,7 +71,7 @@ in `sessionStorage` for that tab only).
 | `baseUrl` / `ukBaseUrl` | Acuris hosts | Your proxy (see Production). |
 | `onResult` / `onError` | none | Callbacks with the response / `{status, code, message}`. |
 | `fetch` | `window.fetch` | Inject your own `fetch`. |
-| `attribution` | `true` | Shows the link "Reverse geocoding by ACURIS-geo.com" under the results; set `false` to turn it off. |
+| `attribution` | `true` | Shows the link "Powered by Acuris Geo" under the results; set `false` to turn it off. |
 
 ### Events
 

@@ -14,7 +14,7 @@ test('query: GET /reverse with radius_m=500 and limit=5 by default', async () =>
   const calls = [];
   await W.reverse({ lat: '52.5163', lng: '13,3777' }, { apiKey: KEY, country: 'deu', fetch: mockFetch(200, { count: 0, results: [] }, calls) });
   assert.equal(calls[0].url, 'https://api.acuris-geo.com/reverse?country=deu&lat=52.5163&lng=13.3777&radius_m=500&limit=5');
-  assert.equal(calls[0].init.headers['X-Acuris-Client'], 'gh-reverse-geocoding/0.1.0');
+  assert.equal(calls[0].init.headers['X-Acuris-Client'], 'gh-reverse-geocoding/0.1.1');
 });
 
 test('gbr reverse goes to the PAF host', async () => {
@@ -71,7 +71,7 @@ test('form: geolocation button only when available, no preselected country', () 
 
 test('render: attribution link on by default under results, removable', () => {
   const d = { count: 1, results: [{ formatted_address: 'A', lat: 1, lng: 2, distance_m: 5 }] };
-  assert.match(W.resultHtml(d), /<\/ol><p class="acuris-powered"><a href="https:\/\/www\.acuris-geo\.com\/" target="_blank" rel="noopener">Reverse geocoding by ACURIS-geo\.com<\/a><\/p>$/);
-  assert.doesNotMatch(W.resultHtml(d, { attribution: false }), /ACURIS-geo\.com/);
+  assert.match(W.resultHtml(d), /<\/ol><p class="acuris-powered"><a href="https:\/\/www\.acuris-geo\.com\/" target="_blank" rel="noopener">Powered by Acuris Geo<\/a><\/p>$/);
+  assert.doesNotMatch(W.resultHtml(d, { attribution: false }), /Powered by Acuris Geo|acuris-powered/);
   assert.doesNotMatch(W.resultHtml({ count: 0, results: [] }), /ACURIS-geo\.com/);
 });

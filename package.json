@@ -1,6 +1,6 @@
 {
   "name": "acuris-reverse-geocoding-widget",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Reverse geocoding widget: coordinates -> nearest postal addresses with distance in metres. ~160 countries, 'use my location' button, framework-free JavaScript. MIT.",
   "private": false,
   "license": "MIT",

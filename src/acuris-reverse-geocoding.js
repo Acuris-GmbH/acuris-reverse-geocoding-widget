@@ -7,8 +7,8 @@
 })(typeof self !== 'undefined' ? self : this, function (C, root) {
   'use strict';
 
-  var VERSION = '0.1.0';
-  var ATTRIB = 'Reverse geocoding by ACURIS-geo.com';
+  var VERSION = '0.1.1';
+  var ATTRIB = 'Powered by Acuris Geo';
   var ATTRIB_URL = 'https://www.acuris-geo.com/';
 
   // Visible attribution link, on by default; opts.attribution === false removes it.
