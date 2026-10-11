@@ -1,0 +1,40 @@
+{
+  "name": "acuris-reverse-geocoding-widget",
+  "version": "0.1.0",
+  "description": "Reverse geocoding widget: coordinates -> nearest postal addresses with distance in metres. ~160 countries, 'use my location' button, framework-free JavaScript. MIT.",
+  "private": false,
+  "license": "MIT",
+  "author": "Acuris GmbH <support@acuris-geo.com>",
+  "homepage": "https://github.com/Acuris-GmbH/acuris-reverse-geocoding-widget#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Acuris-GmbH/acuris-reverse-geocoding-widget.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Acuris-GmbH/acuris-reverse-geocoding-widget/issues"
+  },
+  "main": "src/acuris-reverse-geocoding.js",
+  "files": [
+    "src"
+  ],
+  "keywords": [
+    "reverse-geocoding",
+    "reverse-geocoder",
+    "coordinates-to-address",
+    "geolocation",
+    "lat-lng",
+    "javascript",
+    "widget",
+    "vanilla-js",
+    "acuris"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test",
+    "check-core": "node scripts/check-core.mjs",
+    "size": "node scripts/size.mjs",
+    "prepublishOnly": "node -e \"console.error('This package is not published to npm. Use the files in src/.'); process.exit(1)\""
+  }
+}

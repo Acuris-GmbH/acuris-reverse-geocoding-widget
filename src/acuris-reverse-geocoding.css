@@ -1,0 +1,38 @@
+/* Acuris reverse geocoding widget | MIT | Copyright (c) 2026 Acuris GmbH
+   Override the custom properties to theme it. */
+.acuris-rev {
+  --acuris-fg: #1d2330; --acuris-muted: #5b6475; --acuris-border: #c9cfda; --acuris-bg: #fff;
+  --acuris-accent: #0b5cad; --acuris-ok: #1d7a3a; --acuris-warn: #9a5b00; --acuris-bad: #b42318;
+  display: grid; gap: 6px; max-width: 34rem; font: 15px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--acuris-fg);
+}
+.acuris-rev label { font-weight: 600; font-size: 13px; margin-top: 4px; }
+.acuris-rev input, .acuris-rev select {
+  font: inherit; padding: 8px 10px; border: 1px solid var(--acuris-border); border-radius: 6px; background: var(--acuris-bg); color: inherit;
+}
+.acuris-rev input:focus, .acuris-rev select:focus, .acuris-rev button:focus-visible { outline: 2px solid var(--acuris-accent); outline-offset: 1px; }
+.acuris-rev [hidden] { display: none !important; }
+.acuris-rev button {
+  justify-self: start; margin-top: 6px; font: inherit; font-weight: 600; padding: 8px 16px; border: 0; border-radius: 6px;
+  background: var(--acuris-accent); color: #fff; cursor: pointer;
+}
+.acuris-addr { white-space: pre-line; margin: 8px 0; font-weight: 500; }
+.acuris-rev-ll { display: grid; grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr)); gap: 8px; }
+.acuris-rev-ll label { display: grid; gap: 4px; }
+.acuris-rev-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.acuris-rev .acuris-locate { background: transparent; color: var(--acuris-accent); border: 1px solid var(--acuris-accent); }
+.acuris-rev-list { margin: 10px 0 0; padding: 0 0 0 1.4em; }
+.acuris-rev-list li { padding: 8px 0; border-bottom: 1px solid var(--acuris-border); }
+.acuris-rev-list .acuris-addr { margin: 0 0 2px; }
+.acuris-ll { font-family: ui-monospace, monospace; font-size: 12px; }
+.acuris-meta { margin: 4px 0; font-size: 13px; color: var(--acuris-muted); }
+.acuris-powered { margin: 8px 0 0; font-size: 12px; text-align: right; }
+.acuris-powered a { color: var(--acuris-muted); }
+.acuris-prec { display: inline-block; margin-left: 6px; padding: 0 6px; border-radius: 4px; border: 1px solid currentColor; font-size: 12px; }
+.acuris-prec--point { color: var(--acuris-ok); }
+.acuris-prec--area { color: var(--acuris-warn); }
+.acuris-error { color: var(--acuris-bad); margin: 8px 0 0; }
+.acuris-busy { color: var(--acuris-muted); margin: 8px 0 0; }
+@media (prefers-color-scheme: dark) {
+  .acuris-rev { --acuris-fg: #e6e9ef; --acuris-muted: #a3acbd; --acuris-border: #3a4252; --acuris-bg: #161a22; --acuris-accent: #5aa2ff; --acuris-ok: #3fb168; --acuris-warn: #e0a030; --acuris-bad: #f07167; }
+  .acuris-rev button { color: #0b1220; }
+}
