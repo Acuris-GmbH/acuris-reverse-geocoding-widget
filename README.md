@@ -158,7 +158,7 @@ Source: <https://github.com/Acuris-GmbH/acuris-agent-context>
 | Repository | What it does |
 | --- | --- |
 | [acuris-address-validation-widget](https://github.com/Acuris-GmbH/acuris-address-validation-widget) | Address validation for any HTML form, 240+ countries |
-| [acuris-address-autocomplete-widget](https://github.com/Acuris-GmbH/acuris-address-autocomplete-widget) | Address autocomplete (typeahead), 19 countries |
+| [acuris-address-autocomplete-widget](https://github.com/Acuris-GmbH/acuris-address-autocomplete-widget) | Address autocomplete (typeahead), 20 countries |
 | [acuris-geocoding-widget](https://github.com/Acuris-GmbH/acuris-geocoding-widget) | Address to latitude/longitude with a precision tier |
 | [acuris-mcp](https://github.com/Acuris-GmbH/acuris-mcp) | MCP server: address validation and geocoding tools for AI assistants |
 | [acuris-agent-context](https://github.com/Acuris-GmbH/acuris-agent-context) | Agent Skills that teach coding agents the Acuris API |
